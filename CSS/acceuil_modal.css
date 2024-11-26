@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+:root{
+	--body-color: linear-gradient(90deg, rgba(17,19,55,1) 20%, rgba(17,50,55,1) 80%);
+	--sidebar-color: #FFF;
+	--primary-color: #695CFE;
+	--primary-color-light: #F6F5FF;
+	--toggle-color: #DDD;
+	--text-color:#707070;
+
+	--tran-02: all 0.2s ease;
+	--tran-03: all 0.3s ease;
+	--tran-04: all 0.4s ease;
+	--tran-05: all 0.5s ease;
+}
+
+body{
+	height: 100vh;
+	background: var(--body-color);
+}
+
+
+ /*========= SideBar======== */
+.sidebar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 250px;
+	padding: 10px 14px;
+	background: var(--sidebar-color);
+}
+
+
+ /*========= Resualble CSS======== */
+ .sidebar .text{
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--text-color);
+	
+}
+
+
+.sidebar .image{
+	min-width: 60px;
+	display: flex;
+	align-items: center;
+}
+
+.sidebar li{
+	height: 50px;
+	margin-top: 10px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.sidebar li .icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 60px;
+	font-size: 20px;
+}
+
+.sidebar header{
+	position: relative;
+}
+
+.sidebar .image-text img{
+	width: 40px;
+	border-radius: 6px;
+
+}
+.sidebar header .image-text{
+	display: flex;
+	align-items: center;
+}
+
+header .image-text .header-text{
+	display: flex;
+	flex-direction: column;
+
+}
+
+.header-text .name{
+	font-weight: 600;
+}
+.header-text .classe{
+	margin-top: -2px;
+}
+
+.sidebar .search-box{
+	background: var(--primary-color-light);
+}
+
+.search-box input{
+	 height: 100%;
+	 width: 100%;
+	 outline: none;
+	 border: none;
+	 background: var(--primary-color-light);
+
+}
+
+.sidebar li a{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 6px;
+	transition: var(--tran-04);
+}
+
+.sidebar li a:hover{
+	background: var(--primary-color);
+}
+
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+	color: var(--sidebar-color);
+}
+.sidebar .menu-bar{
+	height: calc(60% - 5px);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.p1{
+	margin-left: 300px;
+	margin-top: 70px;
+	color: #FFF;
+}
+h1{
+	margin-top:130px;
+	color: #0f736a;
+	margin-left: 300px;
+	text-align: center;
+}
+#Présentation #p{
+	margin-right: 800px;
+	text-align: left;
+}
+
+#Présentation p{
+	text-align: center;
+	margin-left: 270px;
+	color: #FFF;
+	text-align: justify;
+}
+
+.logo img{
+	width: 40px;
+	border-radius: 6px;
+	
+}
+#Parcours p{
+	text-align: center;
+	margin-left: 270px;
+	color: #FFF;
+}
+#Parcours #p{
+	margin-right: 80px;
+	text-align: center;
+}
+#Parcours #slam{
+	margin-right: 750px;
+	text-align: center;
+	margin-top: 50px;
+	color: #FFF;
+}
+#Parcours #sisr{
+	margin-right: 750px;
+	text-align: center;
+	margin-top: 50px;
+	color: #FFF;
+}
+
+#Parcours h2{
+	margin-left: 850px;
+	text-align: center;
+	color: #FFF;
+}
+#experience{
+	text-align: center;
+	color: #FFF;
+	margin-left: 850px;
+	margin-top: 50px;
+}
+
+#Compétence img{
+	margin-left: 500px;
+	text-align: center;
+	height: 70;
+	
+}
+
+#Compétence h3{
+	text-align: center;
+	color: #FFF;
+	margin-left: 250px;
+}
+#Certification img{
+	margin-left: 500px;
+	text-align: center;
+	height: 150;
+	
+}
+
+#Certification h3{
+	text-align: center;
+	color: #FFF;
+	margin-left: 250px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(241,85,58,1) 19%, rgb(35, 198, 199) 64%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+	margin-left: 500px;
+	text-align: center;
+}
+.container2 {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(58,68,241,1) 29%, rgba(214,78,78,1) 83%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+	margin-left: 1000px;
+	text-align: center;
+}
+.container p{
+	color: #FFF;
+}
+.container2 p{
+	color: #FFF;
+}
+.all-projet{
+	display: flex;
+	justify-content: center;
+	margin-right: 700;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: linear-gradient(90deg, rgba(17,19,55,1) 20%, rgba(17,50,55,1) 80%);
+    color: white;
+    border-radius: 28px;
+    text-decoration: none;
+    box-shadow: 0px 0px 14px 0px rgba(17,19,55,1);
+}
+.btn2{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    color: linear-gradient(90deg, rgba(17,19,55,1) 20%, rgba(17,50,55,1) 80%);
+    color: white;
+    border-radius: 28px;
+    text-decoration: none;
+    box-shadow: 0px 0px 14px 0px rgba(17,19,55,1);
+}
+
+.btn:hover {
+    color: rgb(35, 198, 199);
+}
+.btn2:hover {
+    color: rgba(214,78,78,1);
+}
+
+.container img{
+	width: 450px;
+	border-radius: 6px;
+}
+.container2 img{
+	width: 450px;
+	border-radius: 6px;
+}
+.timeline {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	z-index: 0;
+	justify-content: space-evenly;
+	justify-items: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+  }
+  
+  .card-item-yellow {
+	position: relative;
+	width: 80%;
+	left: 100px;
+  }
+  
+  .card-item-orange {	
+	position: relative;
+	width: 80%;
+	left: 100px;
+  }
+  .card-item-green {
+	left: 149px;
+	position: relative;
+	width: 80%;
+  }
+  
+  .timeline::after {
+	content: "";
+	position: absolute;
+	height: 1px;
+	width: 60%;
+	background-color: #d5d5d5;
+	top: 400%;
+	z-index: -1;
+  }
+  
+  .subcard {
+	position: absolute;
+	padding: 1.5em;
+	background: #fdfdfd;
+	color: black;
+	box-shadow: 4px 4px 8px #d9d9d9fc;
+	margin: 3.8em 1.5rem;
+	width: -webkit-fill-available;
+  }
+  
+  .section-margin {
+	margin-left: 200px;
+  }
+  
+.Titre h1{
+	margin-left: 200px;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.Parcours_CV p{
+	text-align: center;
+	margin-left: 200px;
+	color: #FFF;
+}
+#Compétence_CV h1{
+	text-align: center;
+}
+#Compétence_CV img{
+	margin-left: 900px;
+	display: flex;
+	width: 80px; 
+    height: auto;
+	border: 2px solid #ddd;
+	border-radius: 8px; 
+}
+#Activité_CV p {
+	text-align: center;
+	margin-left: 200px;
+	color: #FFF;
+}
+.case {
+	margin-left: 800px;
+    width: 500px; /* Largeur de la case */
+    height: 70px; /* Hauteur de la case */
+    background: linear-gradient(90deg, rgba(17,19,55,1) 19%, rgb(17,50,55,1) 64%);
+    border: 2px solid #000; /* Bordure noire */
+    border-radius: 8px; /* Coins légèrement arrondis */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Ombre pour l'effet 3D */
+}
+.case p{
+	text-align: center;
+	margin-top: 24px;
+	text-decoration: none;
+}
+table {
+	margin-left: 610;
+	width: 50%;
+	border-collapse: collapse;
+}
+th, td {
+	border: 1px solid #ccc;
+	padding: 10px;
+	text-align: center;
+}
+th {
+	background-color: #f4f4f4;
+}
+td{
+	color: #FFF;
+}
+
+
+
+
+
+
+
+
+
