@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+body {
+    background-color: #333;
+    font-family: 'Rethink Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* barre d'onglet */
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+}
+
+.logo {
+    margin-right: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0;
+}
+
+nav li {
+    margin-right: 85px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+  color:#f5c801;
+}
+
+.sous-onglet li {
+    margin: 15px;
+}
+
+.sous-onglet a:hover {
+    color: #ffffff;
+}
+
+.sous-onglet {
+    display: none;
+    position: absolute;
+    background-color: #f5c801;
+    box-shadow: 0 2px 10px rgb(2, 2, 2);
+    z-index: 1;
+}
+
+li:hover .sous-onglet {
+    display: block;
+}
+
+.icones {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.icones img {
+    margin-right: 25px;
+}
+.formulaire{
+    
+    max-width: 400px;
+    margin: 130px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f5c801;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 780px;
+}
+h2{
+    color: #333;
+}
+
+input[type = "text"],
+input[type = "password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border:  1px solid #0074e4;
+    border-radius: 5px;
+    outline: none;
+}
+input[type = "text"]:focus,
+input[type = "password"]:focus{
+    box-shadow: 0 0 5px rgba(0, 116, 228, 0.7);
+}
+/* bouton */
+
+button {
+    background-color: #000000;
+    color: #f5c801;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.30s;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 30px;
+    border-radius: 25px;
+  }
+  
+.message-container{
+    position: fixed;
+    top: 180;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    display: none;
+    font-size: 28px;
+}
+.message-container.error{
+    background-color: #FF5733;
+}

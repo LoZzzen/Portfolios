@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="contact.css" />
+    </head>
+    <body>
+        <!--barre d'onglet-->
+    <nav>
+        <div class="logo"><a href="accueil.html">
+            <img src="./images/xencelabs-logo.png" alt="Logo" height="60">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">Produits</a>
+              <ul class="sous-onglet">
+                <li><a href="./page-Tablettes.html">Tablettes</a></li>
+                <li><a href="./page-Accessoires.html">Accessoires</a></li>
+              </ul>
+            </li>
+            <li><a href="./a propos.html">À propos</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+          </ul>
+          <div class="icones">
+            <a href="formulaire.html"><img src="./images/logoconnexion.png" alt="Connexion" height="20"></a>
+            <a href=""><img src="./images/logorecherche.png" alt="Rechercher" height="40"></a>
+            <a href="panier.html"><img src="./images/logopanier.png" alt="Panier" height="26"></a>
+          </div>
+      </nav>
+        <div class="contact">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2636.5971240497956!2d2.4214094768572565!3d48.63669101628223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5de3ca52ac059%3A0xb87b7b6a66ed46f0!2sLyc%C3%A9e%20Polyvalent%20du%20Parc%20des%20Loges!5e0!3m2!1sfr!2sfr!4v1702928798346!5m2!1sfr!2sfr" 
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            </div>
+            <div class="form">
+                <h1>Contactez-nous</h1>
+                <form onsubmit="emailSend(); reset(); return false;">
+                    <input type ="text" name="name" required placeholder="Nom">
+                    <input type="text" name = "phone" required placeholder="Télephone">
+                    <input type ="email" name="email" required placeholder="email">
+                    <input type="text" name="objet" required placeholder="objet">
+                    <textarea name="msg" required placeholder="message"></textarea>
+                    <button type="submit">Envoyer</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="Contact form to email.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>

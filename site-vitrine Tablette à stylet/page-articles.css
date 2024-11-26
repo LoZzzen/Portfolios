@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+body {
+    background-color: #333;
+    font-family: 'Rethink Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* BARRE D'ONGLET */
+
+  nav {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+  }
+
+  .logo {
+    margin-right: 35px;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    padding: 0;
+  }
+
+  nav li {
+    margin-right: 85px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  nav a:hover {
+    color:#f5c801;
+  }
+
+  /* les sous-onglets */
+
+  .sous-onglet li {
+    margin: 15px;
+  }
+
+  .sous-onglet a:hover {
+    color: #ffffff;
+  }
+
+  .sous-onglet {
+    display: none;
+    position: absolute;
+    background-color: #f5c801;
+    box-shadow: 0 2px 10px rgb(2, 2, 2);
+    z-index: 1;
+  }
+
+  li:hover .sous-onglet {
+    display: block;
+  }
+
+  /* les 3 icones */
+
+  .icones {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .icones img {
+    margin-right: 25px;
+  }
+
+/*CONTENU*/
+
+.title {
+    color: white;
+    margin: 40px 60px;
+}
+
+#titre {
+    color:#f5c801;
+}
+
+#produit {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    min-height: 20vh;
+    margin-bottom: 60px;
+  }
+  
+.details-produits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1300px;
+    margin-left: 90px;
+    text-align: left;
+    color:#ffffff;
+  }
+  
+.details-produits img { /* L'image du produit*/
+    max-width: 100%;
+    height: 275px;
+    margin-right: 100px;
+    border-radius: 10px;
+  }
+  
+.description-produit {
+    flex: 1;
+  }
+
+.description-produit h2 {
+    color:#f5c801;
+}
+
+/* Le prix du produit */
+
+#gras {
+    font-weight: bold;
+  }
+  
+  #grisé {
+    text-decoration: line-through;
+    color: rgb(185, 176, 118);
+  }
+  
+  #noel {
+    font-size: small;
+    color: rgb(255, 80, 80);
+  }
+  /* bouton */
+  
+  button {
+    background-color: #f5c801;
+    color: #000000;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.30s;
+  }
+  
+  button:hover {
+    background-color: #ffffff;
+    color: #f5c801;
+    padding: 10px 30px;
+    border-radius: 25px;
+  }

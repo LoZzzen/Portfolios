@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Xencelabs</title>
+        <link rel="stylesheet" href="accueil.css" />
+        <script src="slider.js"></script>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+         <!--barre d'onglet-->
+    <nav>
+        <div class="logo"><a href="accueil.html">
+            <img src="./images/xencelabs-logo.png" alt="Logo" height="60">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#">Produits</a>
+              <ul class="sous-onglet">
+                <li><a href="./page-Tablettes.html">Tablettes</a></li>
+                <li><a href="./page-Accessoires.html">Accessoires</a></li>
+              </ul>
+            </li>
+            <li><a href="./a propos.html">À propos</a></li>
+            <li><a href="./contact.html">Contacts</a></li>
+            <li><a href="../HTML/index.html">Retour sur le portfolio</a></li>
+          </ul>
+          <div class="icones">
+            <a href="formulaire.html"><img src="./images/logoconnexion.png" alt="Connexion" height="20"></a>
+            <a href=""><img src="./images/logorecherche.png" alt="Rechercher" height="40"></a>
+            <a href="panier.html"><img src="./images/logopanier.png" alt="Panier" height="26"></a>
+          </div>
+      </nav>
+      <!--Images défilante-->
+      <div class ="slider"><a href="#">
+        <img src = "./images/image-tablette.jpg" id="slide">
+        </a>
+        <div id="precedent" onclick="ChangeSlide(-1)">&lt;</div>
+        <div id="suivant" onclick="ChangeSlide(1)">&gt;</div>
+    </div>
+    <!--Image de gauche-->
+        <a href="./page-Tablettes.html"><div class="wrapper">
+            <div class="image">
+                <img src="./images/TabletteStylet.png">
+                <div class="content">
+                    <p>Tablettes à Stylet</p>
+                </div>
+            </div>
+        </div></a>
+        <!--Image de droite-->
+        <a href="./page-Accessoires.html"><div class="wrapper2">
+            <div class="image2">
+                <img src="./images/accessoire.png">
+                <div class="content2">
+                    <p>Accessoires</p>
+                </div>
+            </div>
+        </div></a>
+     </body>
+</html>
